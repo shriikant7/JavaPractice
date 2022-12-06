@@ -1,13 +1,17 @@
 package Javapractice;
 
+import java.util.Scanner;
+
 public class Trycatch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try{
-			int a= 40;
-			int b = 10;
-			System.out.println(a/b);
+			Scanner Sc = new Scanner(System.in);
+			int A = Sc.nextInt();
+			int B = Sc.nextInt();
+			
+			System.out.println(A/B);
 			
 		}
 		catch(Exception aa) {
