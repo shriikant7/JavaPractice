@@ -20,6 +20,7 @@ public class Trycatch {
 		}
 		finally{
 			System.out.println("Printed value");
+			System.out.println("For git");
 		}
 
 	}
