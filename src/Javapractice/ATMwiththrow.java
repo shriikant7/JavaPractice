@@ -6,28 +6,21 @@ class ABC extends Exception {
 	}
 }
 
-class Def {
-	public static void ages(int aged) throws ABC {
-		if (aged < 18) {
-			throw new ABC();
-		} else {
-			System.out.println("Yes");
-		}
-
-	}
-
-}
-
-public class ATMwiththrow extends Def {
+public class ATMwiththrow {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// Def S = new Def();
-
+		
+		int age = 9;
 		try {
-			ages(19);
+			if (age < 9.8) {
+				throw new ABC();
+			} else {
+				System.out.println("invalid");
+			}
+
 		} catch (Exception a) {
-			System.out.println(a);
+			System.out.println(a.getMessage());
 
 		}
 	}

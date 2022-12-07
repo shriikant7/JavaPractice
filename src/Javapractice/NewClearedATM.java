@@ -11,7 +11,7 @@ public class NewClearedATM {
 		// TODO Auto-generated method stub
 		int bal = 24000;
      try {
-    	 if(bal >20000) {
+    	 if(bal >2) {
     		 throw new ABCD();
     	 }
     	 else {
@@ -20,7 +20,7 @@ public class NewClearedATM {
     	 
      }
      catch(Exception a) {
-    	 System.out.println(a.getMessage());
+    	 System.out.println(a);
      }
 	}
 
