@@ -30,7 +30,7 @@ public class ATM {
 				switch (AccountType) {
 
 				case 1:
-					System.out.println("Select Options 1.Check Balance 2.Withraw Amount");
+					System.out.println("Select Options 1.Check Balance 2.Withraw Amount 3.Deposit Amount");
 					int SavingAccount = S.nextInt();
 					switch (SavingAccount) {
 					case 1:
@@ -115,6 +115,20 @@ public class ATM {
 									.println(" Invalid option, Please Select Between cash Withrawal & Bank Transfer ");
 						}
 
+						break;
+					case 3 :
+						System.out.println("Enter The Amount To Deposit :");
+						double Deposit = S.nextDouble();
+						if(Deposit>0)
+						{
+							TotalBalance = TotalBalance+ Deposit;
+							System.out.println("Your amount is successfully deposited :");
+							System.out.println("TotalBalance" + TotalBalance);
+							System.out.println("Thank you, Visit Again");
+						}else {
+							System.out.println("Invalid Amount :");
+							
+						}
 						break;
 					default:
 						System.out.println("Invalid Option, Please select between check balance and withraw amount :");
