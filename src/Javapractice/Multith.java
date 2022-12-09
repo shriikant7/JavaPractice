@@ -1,31 +1,41 @@
 package Javapractice;
-class Firstthread implements Runnable{
- int i;
+
+class Seconthread extends Thread {
+	int j;
+	int i;
+	int k = 89;
+
 	public void run() {
-		for(i=0;i<=10 ; i++) {
+
+		for (j = 0; j <= 5; j++) {
+			System.out.println(j);
+		}
+
+		if (k > 0) {
+			System.out.println(k);
+		} else {
+			System.out.println("Invalid");
+		}
+		for (i = 6; i <= 10; i++) {
 			System.out.println(i);
 		}
-		
+
 	}
 }
+
 public class Multith {
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-  Firstthread F = new Firstthread();
-  Thread T = new Thread(F);
-  
-  //T.start();
-  T.wait();
-  
-  System.out.println("HI");
-  
-  System.out.println("Hp");
-  System.out.println("No");
-  
+	public static void main(String[] args) {
 
-  
- 
+		Seconthread F1 = new Seconthread();
+		Seconthread F2 = new Seconthread();
+		Seconthread F3 = new Seconthread();
+
+		// F.start();
+		F1.start();
+		F2.start();
+		F3.start();
+
 	}
 
 }
