@@ -7,14 +7,17 @@ abstract class Ab{
 }
 
 public class abstractpract extends Ab   {
-	 void ab() {
+	 void anna() {
 		 System.out.println("hi");
 	 }
 
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub
-		Ab A = new Ab();
+		Ab b = new Ab();
+		abstractpract a = new abstractpract();
+		a.an();
+		a.anna();
 		
 		
 		
