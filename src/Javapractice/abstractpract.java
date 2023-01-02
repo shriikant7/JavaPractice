@@ -14,7 +14,7 @@ public class abstractpract extends Ab   {
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub
-		Ab b = new Ab();
+		
 		abstractpract a = new abstractpract();
 		a.an();
 		a.anna();
